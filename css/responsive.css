@@ -1,0 +1,105 @@
+/* ================================================
+   ZEDLEARN ONLINE — RESPONSIVE STYLES
+   A Mutale TV Product
+   ================================================ */
+
+/* ===== TABLET — 1024px and below ===== */
+@media screen and (max-width: 1024px) {
+
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-stats { justify-content: center; }
+  .hero-buttons { justify-content: center; }
+  .hero-cards { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .hero-card { min-width: 180px; }
+
+  .grades-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+
+  .mutaletv-content { flex-direction: column; text-align: center; }
+  .mutaletv-logo-wrap { margin: 0 auto; }
+
+  .about-grid { grid-template-columns: 1fr; }
+  .about-grid.reverse { direction: ltr; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== MOBILE — 768px and below ===== */
+@media screen and (max-width: 768px) {
+
+  /* Navbar */
+  .nav-links { display: none; }
+  .nav-search { display: none; }
+  .hamburger { display: flex; }
+
+  /* Hero */
+  .hero { padding: 3rem 0; }
+  .hero-cards { display: none; }
+  .hero-stats { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+
+  /* Grades */
+  .grades-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+  /* Resources */
+  .resources-grid { grid-template-columns: 1fr; }
+  .resource-card-dl { flex-wrap: wrap; }
+  .download-btn { width: 100%; justify-content: center; }
+
+  /* Videos */
+  .videos-grid { grid-template-columns: 1fr; }
+
+  /* Books */
+  .books-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Community */
+  .community-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Platform cards */
+  .platform-card { flex-direction: column; text-align: center; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  /* Filters */
+  .filters-wrap { flex-direction: column; }
+  .filter-group { min-width: unset; width: 100%; }
+
+  /* Cookie popup */
+  .cookie-popup { left: 0.75rem; right: 0.75rem; bottom: 0.75rem; }
+
+  /* Legal */
+  .legal-content { padding: 1.5rem; }
+
+  /* Scroll top */
+  .scroll-top-btn { bottom: 1rem; right: 1rem; }
+}
+
+/* ===== SMALL MOBILE — 480px and below ===== */
+@media screen and (max-width: 480px) {
+
+  .container { padding: 0 1rem; }
+
+  .hero h1 { font-size: 1.65rem; }
+
+  .subjects-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .community-grid { grid-template-columns: 1fr; }
+
+  .books-grid { grid-template-columns: 1fr; }
+
+  .btn { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
+
+  .hero-stat-number { font-size: 1.4rem; }
+
+  .review-form { padding: 1.25rem; }
+
+  .contact-form-wrap { padding: 1.25rem; }
+
+  .founder-card { padding: 2rem 1.25rem; }
+}
