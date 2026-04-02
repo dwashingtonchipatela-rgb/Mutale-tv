@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.supabase.co;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free resources for Primary School Grade 1 to Grade 7. ZedLearn Online by Mutale TV.">
+  <meta name="robots" content="index, follow">
+  <title>Primary School (Grade 1-7) | ZedLearn Online</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><img src="favicon.svg" alt="ZedLearn Online" width="38" height="38"><span class="nav-logo-text">ZedLearn <span>Online</span></span></a>
+      <div class="nav-search">
+        <span class="nav-search-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
+        <input type="text" id="search-input" placeholder="Search resources...">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a></li>
+        <li><a href="past-papers.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Papers</a></li>
+        <li><a href="books.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>Books</a></li>
+        <li><a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polygon points="23 7 16 12 23 17 23 7"/></svg>Videos</a></li>
+        <li><a href="community.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>Community</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="notification-bell-wrap">
+          <button class="notification-bell" id="notification-bell" aria-label="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></button>
+          <span class="notification-count" id="notification-count"></span>
+          <div class="notification-dropdown" id="notification-dropdown"><div class="notification-dropdown-header">Recent Updates</div><div class="notification-list"></div></div>
+        </div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="past-papers.html">Past Papers</a>
+    <a href="lesson-scripts.html">Lesson Scripts</a>
+    <a href="books.html">Books</a>
+    <a href="videos.html">Videos</a>
+    <a href="primary.html">Primary</a>
+    <a href="secondary.html">Secondary</a>
+    <a href="alevel.html">A-Level</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero" style="background:linear-gradient(135deg,#1a73e8,#0d47a1);">
+    <div class="container">
+      <span class="section-label" style="background:rgba(255,255,255,0.15);color:white;">Grade Levels</span>
+      <h1>Primary School</h1>
+      <p>Free resources for Grade 1 to Grade 7 — ECZ aligned, old and new syllabus covered</p>
+      <div class="grade-tabs">
+        <button class="grade-tab active">All Grades</button>
+        <button class="grade-tab">Grade 1</button>
+        <button class="grade-tab">Grade 2</button>
+        <button class="grade-tab">Grade 3</button>
+        <button class="grade-tab">Grade 4</button>
+        <button class="grade-tab">Grade 5</button>
+        <button class="grade-tab">Grade 6</button>
+        <button class="grade-tab">Grade 7</button>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding:3rem 0;">
+    <div class="container">
+      <div class="resource-type-tabs">
+        <button class="resource-type-tab active">All Resources</button>
+        <button class="resource-type-tab">Past Papers</button>
+        <button class="resource-type-tab">Lesson Scripts</button>
+        <button class="resource-type-tab">Books</button>
+        <button class="resource-type-tab">Videos</button>
+      </div>
+      <div id="resources-container">
+        <div class="empty-state">
+          <div class="empty-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg></div>
+          <h3>Resources Coming Soon</h3>
+          <p>Primary school resources are being uploaded. Join our WhatsApp channel to get notified.</p>
+          <a href="community.html" class="btn btn-primary" style="margin-top:1rem;">Get Notified</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:3rem 0;background:var(--bg-primary);">
+    <div class="container">
+      <div class="section-header"><span class="section-label">Explore More</span><h2 class="section-title">Other Grade Levels</h2></div>
+      <div class="other-grades-grid">
+        <a href="secondary.html" class="grade-card grade-card-secondary">
+          <div class="grade-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg></div>
+          <h3>Secondary</h3><p>Form 1 to Form 6</p><span class="btn">Explore</span>
+        </a>
+        <a href="alevel.html" class="grade-card grade-card-alevel">
+          <div class="grade-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg></div>
+          <h3>A-Level</h3><p>Advanced Level</p><span class="btn">Explore</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="nav-logo"><img src="favicon.svg" alt="ZedLearn" width="32" height="32"><span class="nav-logo-text">ZedLearn <span>Online</span></span></div><p>Zambia's national educational platform. A Mutale TV product.</p><div class="footer-social"><a href="#" id="footer-whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a><a href="#" id="footer-youtube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></a><a href="#" id="footer-telegram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a></div></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="past-papers.html">Past Papers</a></li><li><a href="lesson-scripts.html">Lesson Scripts</a></li><li><a href="books.html">Books</a></li><li><a href="videos.html">Videos</a></li></ul></div>
+        <div class="footer-col"><h4>Grade Levels</h4><ul><li><a href="primary.html">Primary</a></li><li><a href="secondary.html">Secondary</a></li><li><a href="alevel.html">A-Level</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Mutale TV. All rights reserved.</p><div class="footer-bottom-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+  <div class="cookie-popup" id="cookie-popup"><h4>We Use Cookies</h4><p>ZedLearn Online uses cookies to improve your experience.</p><div class="cookie-buttons"><button class="btn btn-green" id="cookie-accept">Accept</button><a href="privacy-policy.html" class="btn btn-secondary">Learn More</a></div></div>
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="security.js"></script>
+  <script src="analytics.js"></script>
+  <script src="supabase.js"></script>
+  <script src="downloads.js"></script>
+  <script src="main.js"></script>
+  <script>
+    const gradeTabs = document.querySelectorAll('.grade-tab');
+    gradeTabs.forEach(function(tab) { tab.addEventListener('click', function() { gradeTabs.forEach(function(t) { t.classList.remove('active'); }); this.classList.add('active'); }); });
+    const resourceTypeTabs = document.querySelectorAll('.resource-type-tab');
+    resourceTypeTabs.forEach(function(tab) { tab.addEventListener('click', function() { resourceTypeTabs.forEach(function(t) { t.classList.remove('active'); }); this.classList.add('active'); }); });
+  </script>
+</body>
+</html>

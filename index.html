@@ -2,82 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.youtube.com https://meet.google.com; img-src 'self' data:; connect-src 'self' https://*.supabase.co https://www.google-analytics.com;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.youtube.com; img-src 'self' data:; connect-src 'self' https://*.supabase.co https://www.google-analytics.com;">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ZedLearn Online — Zambia's national educational platform. Free ECZ past papers, lesson scripts, books and video lessons for Grade 1 to A-Level. A Mutale TV product.">
-  <meta name="keywords" content="ECZ past papers, Zambia education, Grade 12 past papers, ZedLearn, Mutale TV, free past papers Zambia, Zambia study materials">
-  <meta name="author" content="Mutale TV">
+  <meta name="keywords" content="ECZ past papers, Zambia education, Grade 12 past papers, ZedLearn, Mutale TV, free past papers Zambia">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="ZedLearn Online | Zambia's Educational Platform">
-  <meta property="og:description" content="Free ECZ past papers, lesson scripts, books and videos for all Zambian students. A Mutale TV product.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zedlearnonline.co.zm">
   <title>ZedLearn Online | Zambia's Educational Platform — A Mutale TV Product</title>
-  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
-
       <a href="index.html" class="nav-logo">
-        <img src="assets/logo/favicon.svg" alt="ZedLearn Online">
+        <img src="favicon.svg" alt="ZedLearn Online" width="38" height="38">
         <span class="nav-logo-text">ZedLearn <span>Online</span></span>
       </a>
-
       <div class="nav-search">
-        <span class="nav-search-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-          </svg>
-        </span>
+        <span class="nav-search-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
         <input type="text" id="search-input" placeholder="Search subjects, papers, books...">
       </div>
-
       <ul class="nav-links">
-        <li>
-          <a href="index.html" class="active">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="pages/resources/past-papers.html">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Papers
-          </a>
-        </li>
-        <li>
-          <a href="pages/resources/books.html">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            Books
-          </a>
-        </li>
-        <li>
-          <a href="pages/resources/videos.html">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-            Videos
-          </a>
-        </li>
-        <li>
-          <a href="community.html">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            Community
-          </a>
-        </li>
+        <li><a href="index.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a></li>
+        <li><a href="past-papers.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Papers</a></li>
+        <li><a href="books.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>Books</a></li>
+        <li><a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polygon points="23 7 16 12 23 17 23 7"/></svg>Videos</a></li>
+        <li><a href="community.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>Community</a></li>
       </ul>
-
       <div class="nav-right">
         <div class="notification-bell-wrap">
           <button class="notification-bell" id="notification-bell" aria-label="Notifications">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
           </button>
           <span class="notification-count" id="notification-count"></span>
           <div class="notification-dropdown" id="notification-dropdown">
@@ -85,220 +44,111 @@
             <div class="notification-list"></div>
           </div>
         </div>
-        <button class="hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
-          </svg>
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
-
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-      Home
-    </a>
-    <a href="pages/resources/past-papers.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
-      Past Papers
-    </a>
-    <a href="pages/resources/lesson-scripts.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/></svg>
-      Lesson Scripts
-    </a>
-    <a href="pages/resources/books.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>
-      Books
-    </a>
-    <a href="pages/resources/videos.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polygon points="23 7 16 12 23 17 23 7"/></svg>
-      Videos
-    </a>
-    <a href="pages/grades/primary.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>
-      Primary (Grade 1-7)
-    </a>
-    <a href="pages/grades/secondary.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>
-      Secondary (Form 1-6)
-    </a>
-    <a href="pages/grades/alevel.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>
-      A-Level
-    </a>
-    <a href="community.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>
-      Community
-    </a>
-    <a href="about.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      About
-    </a>
-    <a href="contact.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
-      Contact
-    </a>
+    <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a>
+    <a href="past-papers.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Past Papers</a>
+    <a href="lesson-scripts.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/></svg>Lesson Scripts</a>
+    <a href="books.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>Books</a>
+    <a href="videos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polygon points="23 7 16 12 23 17 23 7"/></svg>Videos</a>
+    <a href="primary.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>Primary</a>
+    <a href="secondary.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>Secondary</a>
+    <a href="alevel.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>A-Level</a>
+    <a href="community.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>Community</a>
+    <a href="about.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/></svg>About</a>
+    <a href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>Contact</a>
   </div>
 
-
-  <!-- HERO -->
   <header class="hero">
     <div class="container">
-
       <div class="hero-content">
         <div class="hero-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>
           Zambia's National Educational Platform
         </div>
-
         <h1>Learn Smarter.<br>Excel in <span>Every Subject.</span></h1>
-
-        <p class="hero-subtitle">
-          Download free ECZ past papers, lesson scripts, books and video lessons.
-          From Grade 1 to A-Level — old and new syllabus covered.
-        </p>
-
+        <p class="hero-subtitle">Download free ECZ past papers, lesson scripts, books and video lessons. From Grade 1 to A-Level — old and new syllabus covered.</p>
         <div class="hero-buttons">
-          <a href="pages/resources/past-papers.html" class="btn btn-primary">Download Past Papers</a>
-          <a href="pages/grades/secondary.html" class="btn btn-outline-white">Browse by Grade</a>
+          <a href="past-papers.html" class="btn btn-primary">Download Past Papers</a>
+          <a href="secondary.html" class="btn btn-outline-white">Browse by Grade</a>
         </div>
-
         <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="hero-stat-number">500+</div>
-            <div class="hero-stat-label">Past Papers</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">12+</div>
-            <div class="hero-stat-label">Subjects</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">100%</div>
-            <div class="hero-stat-label">Free Always</div>
-          </div>
+          <div class="hero-stat"><div class="hero-stat-number">500+</div><div class="hero-stat-label">Past Papers</div></div>
+          <div class="hero-stat"><div class="hero-stat-number">12+</div><div class="hero-stat-label">Subjects</div></div>
+          <div class="hero-stat"><div class="hero-stat-number">100%</div><div class="hero-stat-label">Free Always</div></div>
         </div>
       </div>
-
       <div class="hero-cards">
         <div class="hero-card">
-          <div class="hero-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
-          </div>
-          <div>
-            <div class="hero-card-title">ECZ Past Papers</div>
-            <div class="hero-card-sub">Grade 7, 9 and 12</div>
-          </div>
+          <div class="hero-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div>
+          <div><div class="hero-card-title">ECZ Past Papers</div><div class="hero-card-sub">Grade 7, 9 and 12</div></div>
         </div>
         <div class="hero-card">
-          <div class="hero-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          </div>
-          <div>
-            <div class="hero-card-title">Books and Scripts</div>
-            <div class="hero-card-sub">All subjects covered</div>
-          </div>
+          <div class="hero-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <div><div class="hero-card-title">Books and Scripts</div><div class="hero-card-sub">All subjects covered</div></div>
         </div>
         <div class="hero-card">
-          <div class="hero-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-          </div>
-          <div>
-            <div class="hero-card-title">Video Lessons</div>
-            <div class="hero-card-sub">ZedLearn Academy</div>
-          </div>
+          <div class="hero-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+          <div><div class="hero-card-title">Video Lessons</div><div class="hero-card-sub">ZedLearn Academy</div></div>
         </div>
       </div>
-
     </div>
   </header>
 
-
-  <!-- QUICK LINKS -->
   <div class="quick-links">
     <div class="container">
-      <a href="pages/resources/past-papers.html" class="quick-link-btn active">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
-        Past Papers
-      </a>
-      <a href="pages/resources/lesson-scripts.html" class="quick-link-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/></svg>
-        Scripts
-      </a>
-      <a href="pages/resources/books.html" class="quick-link-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>
-        Books
-      </a>
-      <a href="pages/resources/videos.html" class="quick-link-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/></svg>
-        Videos
-      </a>
-      <a href="pages/grades/primary.html" class="quick-link-btn">Grade 1-7</a>
-      <a href="pages/grades/secondary.html" class="quick-link-btn">Form 1-6</a>
-      <a href="pages/grades/alevel.html" class="quick-link-btn">A-Level</a>
+      <a href="past-papers.html" class="quick-link-btn active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Past Papers</a>
+      <a href="lesson-scripts.html" class="quick-link-btn">Scripts</a>
+      <a href="books.html" class="quick-link-btn">Books</a>
+      <a href="videos.html" class="quick-link-btn">Videos</a>
+      <a href="primary.html" class="quick-link-btn">Grade 1-7</a>
+      <a href="secondary.html" class="quick-link-btn">Form 1-6</a>
+      <a href="alevel.html" class="quick-link-btn">A-Level</a>
     </div>
   </div>
 
-
-  <!-- SUBJECTS -->
   <section class="subjects-section">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Browse By Subject</span>
         <h2 class="section-title">Choose Your Subject</h2>
-        <p class="section-subtitle">All subjects aligned with the Zambian ECZ curriculum — old and new syllabus available</p>
+        <p class="section-subtitle">All subjects aligned with the Zambian ECZ curriculum</p>
       </div>
       <div class="subjects-grid">
-        <a href="pages/subjects/mathematics.html" class="subject-card">
-          <div class="subject-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
-          </div>
-          <h3>Mathematics</h3>
-          <p>Grade 1–7 · Form 1–6 · A-Level</p>
+        <a href="mathematics.html" class="subject-card">
+          <div class="subject-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+          <h3>Mathematics</h3><p>Grade 1–7 · Form 1–6 · A-Level</p>
         </a>
-        <a href="pages/subjects/chemistry.html" class="subject-card">
-          <div class="subject-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11l-4 7h14l-4-7V3"/></svg>
-          </div>
-          <h3>Chemistry</h3>
-          <p>Form 1–6 · A-Level</p>
+        <a href="chemistry.html" class="subject-card">
+          <div class="subject-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11l-4 7h14l-4-7V3"/></svg></div>
+          <h3>Chemistry</h3><p>Form 1–6 · A-Level</p>
         </a>
-        <a href="pages/subjects/biology.html" class="subject-card">
-          <div class="subject-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Biology</h3>
-          <p>Form 1–6 · A-Level</p>
+        <a href="biology.html" class="subject-card">
+          <div class="subject-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Biology</h3><p>Form 1–6 · A-Level</p>
         </a>
-        <a href="pages/subjects/physics.html" class="subject-card">
-          <div class="subject-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-          </div>
-          <h3>Physics</h3>
-          <p>Form 1–6 · A-Level</p>
+        <a href="physics.html" class="subject-card">
+          <div class="subject-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></div>
+          <h3>Physics</h3><p>Form 1–6 · A-Level</p>
         </a>
-        <a href="pages/subjects/english.html" class="subject-card">
-          <div class="subject-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          </div>
-          <h3>English</h3>
-          <p>Grade 1–7 · Form 1–6</p>
+        <a href="english.html" class="subject-card">
+          <div class="subject-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>English</h3><p>Grade 1–7 · Form 1–6</p>
         </a>
-        <a href="pages/subjects/history.html" class="subject-card">
-          <div class="subject-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>History</h3>
-          <p>Form 1–6 · A-Level</p>
+        <a href="history.html" class="subject-card">
+          <div class="subject-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>History</h3><p>Form 1–6 · A-Level</p>
         </a>
       </div>
     </div>
   </section>
 
-
-  <!-- GRADES -->
   <section class="grades-section">
     <div class="container">
       <div class="section-header">
@@ -307,26 +157,20 @@
         <p class="section-subtitle">Resources for every stage of your education journey</p>
       </div>
       <div class="grades-grid">
-        <a href="pages/grades/primary.html" class="grade-card grade-card-primary">
-          <div class="grade-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
+        <a href="primary.html" class="grade-card grade-card-primary">
+          <div class="grade-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <h3>Primary School</h3>
           <p>Grade 1 to Grade 7 — Building the foundation for lifelong learning</p>
           <span class="btn">Explore Resources</span>
         </a>
-        <a href="pages/grades/secondary.html" class="grade-card grade-card-secondary">
-          <div class="grade-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
+        <a href="secondary.html" class="grade-card grade-card-secondary">
+          <div class="grade-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <h3>Secondary School</h3>
           <p>Form 1 to Form 6 — ECZ exam preparation and full curriculum coverage</p>
           <span class="btn">Explore Resources</span>
         </a>
-        <a href="pages/grades/alevel.html" class="grade-card grade-card-alevel">
-          <div class="grade-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
+        <a href="alevel.html" class="grade-card grade-card-alevel">
+          <div class="grade-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <h3>A-Level</h3>
           <p>Advanced Level — Old and new syllabus, university preparation</p>
           <span class="btn">Explore Resources</span>
@@ -335,8 +179,6 @@
     </div>
   </section>
 
-
-  <!-- RESOURCES -->
   <section class="resources-section">
     <div class="container">
       <div class="section-header">
@@ -345,174 +187,136 @@
         <p class="section-subtitle">All resources are completely free — no registration required</p>
       </div>
       <div class="resources-grid">
-        <a href="pages/resources/past-papers.html" class="resource-card">
+        <a href="past-papers.html" class="resource-card">
           <div class="resource-card-header">
-            <div class="resource-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            </div>
+            <div class="resource-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div>
             <h3>ECZ Past Papers</h3>
           </div>
           <p>Official ECZ examination papers for Grade 7, 9 and 12. Old and new syllabus included.</p>
           <div class="resource-card-footer">
             <span class="resource-count">500+ papers</span>
-            <span class="btn btn-primary" style="font-size:0.82rem; padding:0.45rem 1rem;">Download</span>
+            <span class="btn btn-primary" style="font-size:0.82rem;padding:0.45rem 1rem;">Download</span>
           </div>
         </a>
-        <a href="pages/resources/lesson-scripts.html" class="resource-card">
+        <a href="lesson-scripts.html" class="resource-card">
           <div class="resource-card-header">
-            <div class="resource-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            </div>
+            <div class="resource-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/></svg></div>
             <h3>Lesson Scripts</h3>
           </div>
-          <p>Detailed lesson notes for every topic. Written by experienced Zambian teachers aligned to the ECZ curriculum.</p>
+          <p>Detailed lesson notes for every topic. Written by experienced Zambian teachers.</p>
           <div class="resource-card-footer">
             <span class="resource-count">300+ scripts</span>
-            <span class="btn btn-primary" style="font-size:0.82rem; padding:0.45rem 1rem;">Download</span>
+            <span class="btn btn-primary" style="font-size:0.82rem;padding:0.45rem 1rem;">Download</span>
           </div>
         </a>
-        <a href="pages/resources/books.html" class="resource-card">
+        <a href="books.html" class="resource-card">
           <div class="resource-card-header">
-            <div class="resource-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            </div>
+            <div class="resource-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
             <h3>Books</h3>
           </div>
-          <p>Educational textbooks and fiction books for all grade levels. Download as PDF completely free.</p>
+          <p>Educational textbooks and fiction books for all grade levels. Download as PDF free.</p>
           <div class="resource-card-footer">
             <span class="resource-count">200+ books</span>
-            <span class="btn btn-primary" style="font-size:0.82rem; padding:0.45rem 1rem;">Download</span>
+            <span class="btn btn-primary" style="font-size:0.82rem;padding:0.45rem 1rem;">Download</span>
           </div>
         </a>
-        <a href="pages/resources/videos.html" class="resource-card">
+        <a href="videos.html" class="resource-card">
           <div class="resource-card-header">
-            <div class="resource-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-            </div>
-            <h3>VideoLessons</h3>
+            <div class="resource-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+            <h3>Video Lessons</h3>
           </div>
-          <p>Watch lesson videos from ZedLearn Academy on YouTube. Visual learning for every subject and grade.</p>
+          <p>Watch lesson videos from ZedLearn Academy on YouTube. Visual learning for every subject.</p>
           <div class="resource-card-footer">
             <span class="resource-count">100+ videos</span>
-            <span class="btn btn-primary" style="font-size:0.82rem; padding:0.45rem 1rem;">Watch</span>
+            <span class="btn btn-primary" style="font-size:0.82rem;padding:0.45rem 1rem;">Watch</span>
           </div>
         </a>
       </div>
     </div>
   </section>
 
-
-  <!-- COMMUNITY -->
   <section class="community-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-label" style="background:rgba(255,255,255,0.12); color:rgba(255,255,255,0.9);">Join The Community</span>
+        <span class="section-label" style="background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.9);">Join The Community</span>
         <h2 class="section-title" style="color:white;">Connect. Study. Excel.</h2>
-        <p class="section-subtitle" style="color:rgba(255,255,255,0.7); margin:0 auto;">Join thousands of Zambian students on our platforms</p>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.7);margin:0 auto;">Join thousands of Zambian students on our platforms</p>
       </div>
       <div class="community-grid">
-        <a href="#" id="whatsapp-group-link" class="community-card whatsapp" target="_blank" rel="noopener">
-          <div class="community-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3>WhatsApp Group</h3>
-          <p>ZedLearn Study Group — discuss topics with students</p>
+        <a href="#" id="whatsapp-group-link" class="community-card" target="_blank" rel="noopener">
+          <div class="community-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>WhatsApp Group</h3><p>ZedLearn Study Group</p>
         </a>
-        <a href="#" id="whatsapp-channel-link" class="community-card whatsapp" target="_blank" rel="noopener">
-          <div class="community-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3z"/></svg>
-          </div>
-          <h3>WhatsApp Channel</h3>
-          <p>ZedLearn Updates — get notified of new resources</p>
+        <a href="#" id="whatsapp-channel-link" class="community-card" target="_blank" rel="noopener">
+          <div class="community-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3z"/></svg></div>
+          <h3>WhatsApp Channel</h3><p>ZedLearn Updates</p>
         </a>
-        <a href="#" id="youtube-link" class="community-card youtube" target="_blank" rel="noopener">
-          <div class="community-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          </div>
-          <h3>YouTube</h3>
-          <p>ZedLearn Academy — subscribe for video lessons</p>
+        <a href="#" id="youtube-link" class="community-card" target="_blank" rel="noopener">
+          <div class="community-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+          <h3>YouTube</h3><p>ZedLearn Academy</p>
         </a>
-        <a href="#" id="telegram-link" class="community-card telegram" target="_blank" rel="noopener">
-          <div class="community-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          </div>
-          <h3>Telegram</h3>
-          <p>Join our Telegram channel for updates</p>
+        <a href="#" id="telegram-link" class="community-card" target="_blank" rel="noopener">
+          <div class="community-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
+          <h3>Telegram</h3><p>Updates channel</p>
         </a>
-        <a href="#" id="meet-link" class="community-card meet" target="_blank" rel="noopener">
-          <div class="community-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-          </div>
-          <h3>Google Meet</h3>
-          <p>Join live study sessions and interactive lessons</p>
+        <a href="#" id="meet-link" class="community-card" target="_blank" rel="noopener">
+          <div class="community-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+          <h3>Google Meet</h3><p>Live study sessions</p>
         </a>
         <a href="community.html" class="community-card">
-          <div class="community-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h3>Leave a Review</h3>
-          <p>Help other students find the best resources</p>
+          <div class="community-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <h3>Leave a Review</h3><p>Help other students</p>
         </a>
       </div>
     </div>
   </section>
 
-
-  <!-- MUTALE TV -->
   <section class="mutaletv-section">
     <div class="container">
       <div class="mutaletv-content">
         <div class="mutaletv-logo-wrap">
-          <img src="assets/logo/mutale-tv-logo.svg" alt="Mutale TV Logo">
+          <img src="mutale-tv-logo.svg" alt="Mutale TV Logo" width="140" height="140">
         </div>
         <div class="mutaletv-text">
           <span class="section-label">Powered By</span>
           <h2>Mutale TV</h2>
-          <p>ZedLearn Online is a product of Mutale TV — a Zambian media and education company dedicated to making quality education accessible to every student in Zambia, completely free. Our mission is to bridge the education gap and empower the next generation of Zambian leaders through technology.</p>
+          <p>ZedLearn Online is a product of Mutale TV — a Zambian media and education company dedicated to making quality education accessible to every student in Zambia, completely free.</p>
           <a href="about.html" class="btn btn-primary">Learn More About Us</a>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-logo">
-            <img src="assets/logo/favicon.svg" alt="ZedLearn" style="width:32px;height:32px;">
+            <img src="favicon.svg" alt="ZedLearn" width="32" height="32">
             <span class="nav-logo-text">ZedLearn <span>Online</span></span>
           </div>
-          <p>Zambia's national educational platform. Free past papers, lesson scripts, books and videos for every Zambian student. A Mutale TV product.</p>
+          <p>Zambia's national educational platform. A Mutale TV product.</p>
           <div class="footer-social">
-            <a href="#" id="footer-whatsapp" title="WhatsApp" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </a>
-            <a href="#" id="footer-youtube" title="YouTube" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            </a>
-            <a href="#" id="footer-telegram" title="Telegram" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </a>
+            <a href="#" id="footer-whatsapp" title="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+            <a href="#" id="footer-youtube" title="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></a>
+            <a href="#" id="footer-telegram" title="Telegram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
           <h4>Resources</h4>
           <ul>
-            <li><a href="pages/resources/past-papers.html">Past Papers</a></li>
-            <li><a href="pages/resources/lesson-scripts.html">Lesson Scripts</a></li>
-            <li><a href="pages/resources/books.html">Books</a></li>
-            <li><a href="pages/resources/videos.html">Videos</a></li>
+            <li><a href="past-papers.html">Past Papers</a></li>
+            <li><a href="lesson-scripts.html">Lesson Scripts</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="videos.html">Videos</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Grade Levels</h4>
           <ul>
-            <li><a href="pages/grades/primary.html">Primary (Grade 1-7)</a></li>
-            <li><a href="pages/grades/secondary.html">Secondary (Form 1-6)</a></li>
-            <li><a href="pages/grades/alevel.html">A-Level</a></li>
+            <li><a href="primary.html">Primary (Grade 1-7)</a></li>
+            <li><a href="secondary.html">Secondary (Form 1-6)</a></li>
+            <li><a href="alevel.html">A-Level</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -527,7 +331,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Mutale TV. All rights reserved. ZedLearn Online is a product of Mutale TV.</p>
+        <p>© 2026 Mutale TV. All rights reserved.</p>
         <div class="footer-bottom-links">
           <a href="privacy-policy.html">Privacy Policy</a>
           <a href="terms-of-service.html">Terms of Service</a>
@@ -536,8 +340,6 @@
     </div>
   </footer>
 
-
-  <!-- COOKIE POPUP -->
   <div class="cookie-popup" id="cookie-popup">
     <h4>We Use Cookies</h4>
     <p>ZedLearn Online uses cookies to improve your experience. By continuing you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
@@ -547,18 +349,15 @@
     </div>
   </div>
 
-  <!-- SCROLL TO TOP -->
   <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Back to top">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <!-- SCRIPTS -->
-  <script src="js/security.js"></script>
-  <script src="js/analytics.js"></script>
-  <script src="js/supabase.js"></script>
-  <script src="js/comments.js"></script>
-  <script src="js/downloads.js"></script>
-  <script src="js/main.js"></script>
-
+  <script src="security.js"></script>
+  <script src="analytics.js"></script>
+  <script src="supabase.js"></script>
+  <script src="comments.js"></script>
+  <script src="downloads.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

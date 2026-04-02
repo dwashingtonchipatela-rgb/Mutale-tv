@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.supabase.co;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Login | ZedLearn Online</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <div class="login-page">
+    <div class="login-card">
+      <div class="login-logo">
+        <img src="favicon.svg" alt="ZedLearn Online" width="60" height="60">
+        <h1>ZedLearn Online</h1>
+        <p>Admin Dashboard — Mutale TV</p>
+      </div>
+
+      <div class="login-form-group">
+        <label>Email Address</label>
+        <input type="email" id="login-email" placeholder="admin@zedlearnonline.co.zm" maxlength="200" autocomplete="email">
+      </div>
+      <div class="login-form-group">
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password" maxlength="200" autocomplete="current-password">
+      </div>
+
+      <div style="display:none;"><input type="text" id="login-honeypot" tabindex="-1" autocomplete="off"></div>
+
+      <button class="login-btn" id="login-btn">Sign In to Dashboard</button>
+
+      <div class="login-error" id="login-error"></div>
+
+      <div class="login-security-note">
+        This area is restricted to authorised Mutale TV staff only.<br>
+        All access attempts are logged and monitored.
+      </div>
+    </div>
+  </div>
+
+  <script src="supabase.js"></script>
+  <script>
+    const loginBtn = document.getElementById('login-btn');
+    const loginError = document.getElementById('login-error');
+    let loginAttempts = 0;
+    const MAX_ATTEMPTS = 5;
+
+    document.addEventListener('DOMContentLoaded', async function() {
+      if (window.ZedLearnDB) {
+        const loggedIn = await window.ZedLearnDB.checkAdminSession();
+        if (loggedIn) window.location.href = 'admin-dashboard.html';
+      }
+    });
+
+    document.getElementById('login-password').addEventListener('keydown', function(e) { if (e.key === 'Enter') handleLogin(); });
+    document.getElementById('login-email').addEventListener('keydown', function(e) { if (e.key === 'Enter') handleLogin(); });
+    loginBtn.addEventListener('click', handleLogin);
+
+    async function handleLogin() {
+      if (document.getElementById('login-honeypot').value.length > 0) return;
+      if (loginAttempts >= MAX_ATTEMPTS) { loginError.textContent = 'Too many failed attempts. Please wait 5 minutes.'; loginError.classList.add('show'); return; }
+      const email = document.getElementById('login-email').value.trim();
+      const password = document.getElementById('login-password').value;
+      if (!email || !password) { loginError.textContent = 'Please enter your email and password.'; loginError.classList.add('show'); return; }
+      loginBtn.textContent = 'Signing in...';
+      loginBtn.disabled = true;
+      loginError.classList.remove('show');
+      if (window.ZedLearnDB) {
+        const result = await window.ZedLearnDB.adminLogin(email, password);
+        if (result.success) {
+          loginBtn.textContent = 'Redirecting...';
+          window.location.href = 'admin-dashboard.html';
+        } else {
+          loginAttempts++;
+          loginBtn.textContent = 'Sign In to Dashboard';
+          loginBtn.disabled = false;
+          loginError.textContent = 'Invalid email or password. ' + (MAX_ATTEMPTS - loginAttempts) + ' attempts remaining.';
+          loginError.classList.add('show');
+          if (loginAttempts >= MAX_ATTEMPTS) {
+            loginBtn.disabled = true;
+            loginError.textContent = 'Account locked. Too many failed attempts. Try again in 5 minutes.';
+            setTimeout(function() { loginAttempts = 0; loginBtn.disabled = false; loginError.classList.remove('show'); }, 5 * 60 * 1000);
+          }
+        }
+      } else {
+        loginBtn.textContent = 'Sign In to Dashboard';
+        loginBtn.disabled = false;
+        loginError.textContent = 'Connection error. Check your internet and try again.';
+        loginError.classList.add('show');
+      }
+    }
+  </script>
+</body>
+</html>
