@@ -1,8 +1,8 @@
 // ============================================
 // ONLY CHANGE THESE TWO LINES
 // ============================================
-const SUPABASE_URL = 'PASTE YOUR SUPABASE URL HERE';
-const SUPABASE_ANON_KEY = 'PASTE YOUR ANON KEY HERE';
+const SUPABASE_URL = 'https://epptqdjickazlcqihusl.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwcHRxZGppY2themxjcWlodXNsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5MzkxNDEsImV4cCI6MjA5MDUxNTE0MX0.DOcfxKlT27WpFtMkrrpmRV3M4jb0J3uzjZcGk_7C9S8';
 // ============================================
 
 function loadSupabaseLibrary(callback) {
